@@ -3,7 +3,7 @@ Copyright (c) 2024 Stefan Richthofer. All rights reserved.
 -->
 
 <!--- ![APIdia Logo](https://apidia.net/Apidia_solid.svg) -->
-<img src="https://apidia.net/Apidia_solid.svg" alt="APIdia Logo" width="75%"/>
+<p align="center"><img src="https://apidia.net/Apidia_solid.svg" alt="APIdia Logo" width="65%"/></p>
 
 This repository is the Github presence of the website [apidia.net](https://apidia.net), which is a collection of API documentation of open source projects. Initially, the focus is on Java API.
 
