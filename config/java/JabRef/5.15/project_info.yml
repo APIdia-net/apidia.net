@@ -1,0 +1,25 @@
+# Properties in this file can augment or override information
+# retrieved from a project's Maven pom file.
+
+# This file is licensed under the same license as the project it applies to.
+# Copyright is shared among all contributors.
+
+fullname: 'JabRef'
+subtitle: 'JabRef Bibliography Management'
+description: 'Stay on top of your literature: JabRef helps you to collect and organize
+  sources, find the paper you need and discover the latest research: JabRef is an
+  open-source, cross-platform citation and reference management tool.'
+homepage: 'https://jabref.org'
+devpage: 'https://github.com/JabRef/jabref'
+docpage: 'https://docs.jabref.org/'
+# projectpage:
+gettingstarted: 'https://docs.jabref.org/getting-started'
+licenseurl: 'https://raw.githubusercontent.com/JabRef/jabref/refs/heads/main/LICENSE'
+wiki: 'https://github.com/JabRef/jabref/wiki'
+devguide: 'https://devdocs.jabref.org'
+issues: 'https://github.com/JabRef/jabref/issues'
+forum: 'https://discourse.jabref.org'
+mailinglistspage: 'https://sourceforge.net/p/jabref/mailman/'
+vc_uri: 'https://github.com/JabRef/jabref.git'
+vc_dev_uri: 'git@github.com:JabRef/jabref.git'
+release_date: '2024-07-10'

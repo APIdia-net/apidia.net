@@ -12,5 +12,5 @@ For every issue, please provide a link to the relevant html page or section. For
 
 We suggest that feature requests and ideas for improvement are directed to [discussions](https://github.com/APIdia-net/apidia.net/discussions) rather than to issues.
 
-As of this writing, this repository is empty. Eventually, it will host some publicly relevant documentation and config data for APIdia, such that users can contribute adjustments via pull requests.
+The config folder of this repository can host custom configurations for projects on APIdia. For every doc profile on APIdia, a similar subfolder as on the website can be rooted under the config folder and contain several config files. These files are taken into account for future builds and can be edited by users via pull requests.
 

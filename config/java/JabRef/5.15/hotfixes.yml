@@ -1,0 +1,78 @@
+# This file contains documentation "hotfixes", i.e. fixes that are applied to the
+# documentation as it is generated, but not to the original source files.
+# These fixes are usually offered to the original project as a pull request, so
+# they may get applied to the original source files of a later release eventually.
+# To adjust content of this file, please create a pull request to this repository.
+
+# Each fix is listed under a scope header, which is a regex to identify
+# fully qualified names of target items (any entity that has an associated doc
+# comment: classes, packages, members, etc.). For each target, each fix listed under
+# the scope header is applied to its associated doc comment in a search/replace manner.
+# The first item of each fix is a regex used for search and the second item is a
+# replacement string with the notation \g<i> referring to the ith group for i > 0 or
+# to the whole match for i = 0. Fixes are applied in the order of appearance in this file,
+# but it is strongly recommended that they are written such that the result is independent
+# of the order of application. It is further recommended to restrict socpe regexes to
+# characters such that they can be written without quotation signs in yaml syntax.
+
+# This file is licensed under the same license as the project it applies to.
+# Copyright is shared among all contributors.
+
+org.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag:
+  '<meta name="citation_pdf_url">': '{@code <meta name="citation_pdf_url">}'
+  'https://scholar.google.com/intl/de/scholar/inclusion.html#indexing': '{@link https://scholar.google.com/intl/de/scholar/inclusion.html#indexing}'
+
+org.jabref.logic.util.io.XMLUtil.getAttributeContent:
+  '<item attributeName="content" />': '{@code <item attributeName="content" />}'
+
+org.jabref.logic.xmp.XmpUtilWriter.generateXmpStringWithoutXmpDeclaration:
+  '<\?xpacket begin=...>': '{@code <?xpacket begin=...>}'
+  '<br/>': ''
+
+org.jabref.gui.fieldeditors.URLUtil.cleanGoogleSearchURL:
+  '@code\{url\}': '{@code url}'
+  '<example>': '<h4>Example</h4>'
+  '</example>': ''
+  'https:[^\s].*': '{@code \g<0>}'
+
+org.jabref.(logic|model).*:
+  '<example>': '<h4>Example</h4>
+
+    <pre>{@code '
+  '</example>': '}</pre>'
+  '<emph>': '<em>'
+  '</emph>': '</em>'
+
+org.jabref.logic.util.io.FileUtil.detectBadFileName:
+  'See also \{@link (.*?)\}': '@see \g<1>'
+
+org.jabref.model.entry.identifier.DOI.parse:
+  '<c>IllegalArgumentException</c>': '{@link java.lang.IllegalArgumentException IllegalArgumentException}'
+  'Optional.isPresent\(\)': '{@link java.util.Optional.isPresent() Optional.isPresent()}'
+  'Optional\&lt;DOI>': '{@code Optional<DOI>}'
+
+org.jabref.logic.util.io.XMLUtil.*:
+  '<item>': '<pre>{@code <item>'
+  '</item>': '</item>}</pre>'
+
+org.jabref.gui.desktop.os.*:
+  'open handling methods <br>': 'open handling methods.
+
+    <p>'
+  '\* <p>': '<p>'
+  '{@link Launcher#addLogToDisk}': '{@link Launcher#initLogging}.'
+  'https://tinylog.org/v2/configuration/': '@see https://tinylog.org/v2/configuration'
+
+org.jabref.model.groups.GroupTreeNode.setGroup:
+  '}}': '}'
+
+org.jabref.gui.fieldeditors.contextmenu.EditorMenus:
+  'org.jabref.gui.fieldeditors.EditorTextArea#initContextMenu\(java.util.function.Supplier\)': 'org.jabref.gui.fieldeditors.EditorTextArea#initContextMenu(java.util.function.Supplier,
+    org.jabref.gui.keyboard.KeyBindingRepository) EditorTextArea#initContextMenu'
+
+org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check:
+  '#writeFindingsAsCsv\(Result, Path, BibEntryTypesManager, BibDatabaseMode\)}': '#writeFindings()}.'
+
+org.jabref.*:
+  '{@see ': 'See {@link '
+
