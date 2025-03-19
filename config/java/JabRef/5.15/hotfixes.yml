@@ -2,7 +2,7 @@
 # documentation as it is generated, but not to the original source files.
 # These fixes are usually offered to the original project as a pull request, so
 # they may get applied to the original source files of a later release eventually.
-# To adjust content of this file, please create a pull request to this repository.
+# To adjust content of this file, please file a pull request to this repository.
 
 # Each fix is listed under a scope header, which is a regex to identify
 # fully qualified names of target items (any entity that has an associated doc
@@ -72,6 +72,9 @@ org.jabref.gui.fieldeditors.contextmenu.EditorMenus:
 
 org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check:
   '#writeFindingsAsCsv\(Result, Path, BibEntryTypesManager, BibDatabaseMode\)}': '#writeFindings()}.'
+
+org.jabref.logic.xmp.XmpUtilShared:
+  '\(@([^)]+)\)': '{@\g<1>}'
 
 org.jabref.*:
   '{@see ': 'See {@link '
